@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}
+    Inscription
+{% endblock %}
+{% block content %}
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Contacts</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titre">
+  </div>
+  <div class="form-group">
+    <label for="auteur">TEL_PORTABLE</label>
+    <input type="text" class="form-control" id="auteur" placeholder="Auteur">
+  </div>
+    <div class="form-group">
+    <label for="auteur">TEL_DOMICILE</label>
+    <input type="text" class="form-control" id="nbr_pages" placeholder="Nombre de pages">
+  </div>
+    <div class="form-group">
+    <label for="auteur">TEL_BUREAU</label>
+    <input type="text" class="form-control" id="annee" placeholder="Annnée">
+  </div>
+  <div class="form-group">
+    <label for="auteur">EMAIL</label>
+    <input type="text" class="form-control" id="annee" placeholder="Annnée">
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+{% endblock %}
