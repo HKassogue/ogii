@@ -1,31 +1,31 @@
 {% extends "base.html" %}
+
 {% block title %}
-    Inscription
+    AjouterContact
 {% endblock %}
+
 {% block content %}
+{% include "noyau/nav.html" %}
 <form>
+  
   <div class="form-group">
-    <label for="formGroupExampleInput">Contacts</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titre">
-  </div>
-  <div class="form-group">
-    <label for="auteur">TEL_PORTABLE</label>
-    <input type="text" class="form-control" id="auteur" placeholder="Auteur">
+    <label for="TEL_PORTABLE">TEL_PORTABLE</label>
+    <input type="tel" class="form-control" id="TEL_PORTABLE" placeholder="TEL_PORTABLE">
   </div>
     <div class="form-group">
-    <label for="auteur">TEL_DOMICILE</label>
-    <input type="text" class="form-control" id="nbr_pages" placeholder="Nombre de pages">
+    <label for="TEL_DOMICILE">TEL_DOMICILE</label>
+    <input type="tel" class="form-control" id="TEL_DOMICILE" placeholder="TEL_DOMICILE">
   </div>
     <div class="form-group">
-    <label for="auteur">TEL_BUREAU</label>
-    <input type="text" class="form-control" id="annee" placeholder="Annnée">
+    <label for="TEL_BUREAU">TEL_BUREAU</label>
+    <input type="tel" class="form-control" id="TEL_BUREAU" placeholder="TEL_BUREAU">
   </div>
   <div class="form-group">
-    <label for="auteur">EMAIL</label>
-    <input type="text" class="form-control" id="annee" placeholder="Annnée">
+    <label for="EMAIL">EMAIL</label>
+    <input type="text" class="form-control" id="EMAIL" placeholder="EMAIL">
   </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
+{% include "noyau/footer.html" %}
 
 {% endblock %}

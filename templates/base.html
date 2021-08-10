@@ -1,60 +1,43 @@
 <!DOCTYPE html>
+{% load static %}
 
 <html>
 <head>
   <meta charset="UTF-8">
-  <title> {% block title %} Entreprise du Peuple {% endblock %} </title>
+  <title> {% block title %}{% endblock %} </title>
   <meta name="description" content="">
   <meta name="keywords" content="abdoulaye, Achat, livraison ">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
   
 </head>
 
 
 <body>
+  
   <div class="container">
     <div class="row">
     <div class="main">
-      <div class="header">
-        <div class="nav-area">
-          <ul class="nav">
-            <li style="border: medium none ;"><a href="#">Accueil</a></li>
-            <li><a href="#">Compte</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">A propos</a></li>
-            
-          </ul>
-        </div>
-        
-        <div class="banner-text">
-              <center> ENTREPRISE TOURE  ! </center>
-        </div>
-      </div>
 
       <div class="mid">
-        <div class="mid-left">
-          <h3>Actions<br>
-          </h3>
-          {% block nav %}
-          <ul class="left-item">
-            <li><a href="{% url 'connexion' %}">Se connecter<br></a></li>
-            
-            <li><a href="">voir<br></a></li>
-          </ul>
-          {% endblock %}
-        </div>
+        
 
         <div class="mid-right">
           {% block content %}
-          <h1>Bienvenu sur notre site</h1>
+          
+
+
+
+
+         
+          
+          
           {% endblock %}
         </div>
       </div>
 
 
-      <div class="footer">
-        <p class="copyright-text">Copyright &copy; 2020. Tout droit réservé. Développé par
-          <a target="_blank" href="http://www.cfeco.ml/">ABDOULAYE TOURE</a>.</p>
-      </div>
+     
 
     </div>
 
